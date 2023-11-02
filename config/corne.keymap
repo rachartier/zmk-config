@@ -13,13 +13,24 @@
         macro_greater_than: macro_greater_than {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LA(KP_NUMBER_6) &kp KP_NUMBER_2>;
+            bindings =
+                <&macro_press>,
+                <&sk LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_6 &kp KP_NUMBER_2>,
+                <&macro_release>;
+
             label = "MACRO_GREATER_THAN";
         };
         macro_less_than: macro_less_than {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LA(KP_N6) &kp KP_N0>, <&macro_press>;
+            bindings =
+                <&macro_press>,
+                <&sk LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_6 &kp KP_N0>,
+                <&macro_release>;
 
             label = "MACRO_LESS_THAN";
         };
