@@ -23,7 +23,7 @@
 &kp TAB     &kp Q  &kp W  &kp E     &kp R    &kp T        &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp ESCAPE  &kp A  &kp S  &kp D     &lt 3 F  &kp G        &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z  &kp X  &kp C     &kp V    &kp B        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
-                          &kp LGUI  &mo 1    &kp SPACE    &mo 3  &mo 2  &kp RALT
+                          &kp LGUI  &mo 2    &kp SPACE    &mo 4  &mo 1  &kp RALT
             >;
         };
 
@@ -50,18 +50,18 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS      &kp KP_MULTIPLY  &kp LPAR          &kp RPAR           &kp BSPC
-&kp LCTRL  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp F6     &kp EQUAL     &kp EQUAL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON
-&kp LSHFT  &kp F7    &kp F8  &kp F9    &kp F10   &kp F11      &kp F12    &kp ASTERISK  &kp APOS         &trans            &trans             &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans        &kp RALT
+&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR          &kp RPAR           &kp BSPC
+&kp LCTRL  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp F6     &kp EQUAL  &kp EQUAL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT
+&kp LSHFT  &kp F7    &kp F8  &kp F9    &kp F10   &kp F11      &kp F12    &kp N8     &kp APOS         &trans            &trans             &kp TILDE
+                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
         calc {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(EQUAL)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp KP_DOT       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_COMMA   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp NUMBER_6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp KP_DOT       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_COMMA  &trans  &trans
                         &trans  &trans  &trans           &trans           &trans           &kp KP_NUMBER_0
             >;
         };
