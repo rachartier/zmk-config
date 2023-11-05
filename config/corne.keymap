@@ -88,16 +88,16 @@
 
         calc {
             bindings = <
-&trans &trans &trans  &trans  &trans  &trans  &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp NUMBER_6  &trans
-&trans &trans &trans  &trans  &trans  &trans  &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS      &trans
-&trans &trans &trans  &trans  &trans  &trans  &kp KP_DOT       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_COMMA  &trans
-                        &trans  &trans  &trans           &trans           &trans           &kp KP_NUMBER_0
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DIVIDE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp NUMBER_6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_MINUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DOT     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_COMMA  &trans
+                        &trans  &trans  &trans    &trans         &trans           &kp KP_NUMBER_0
             >;
         };
 
         layer_4 {
             bindings = <
-&none       &sys_reset    &none         &none         &none         &none           &none     &none           &none         &none      &none  &none
+&none       &bootloader   &none         &none         &none         &none           &none     &none           &none         &none      &none  &none
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
 &none       &none         &none         &none         &none         &none           &none     &none           &none         &none      &none  &none
                                         &none         &none         &none           &none     &none           &none
