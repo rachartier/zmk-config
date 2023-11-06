@@ -10,17 +10,19 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define U_MOUSE_MOVE_MAX 4000                     /* <--- New max speed setting (default: 600) */
+
 #undef MOVE_UP
 #undef MOVE_DOWN
 #undef MOVE_LEFT
 #undef MOVE_RIGHT
+
 #define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
 
 &mmv {
-	time-to-max-speed-ms = <800>;             /* <--- How long time until max speed is reached (default: 500) */
+    time-to-max-speed-ms = <800>;             /* <--- How long time until max speed is reached (default: 500) */
 };
 
 / {
@@ -65,7 +67,7 @@
 
             bindings = <
 &kp TAB     &kp Q  &kp W  &kp E             &kp R    &kp T          &kp Y        &kp U  &kp I         &kp O    &kp P     &kp BSPC
-&kp ESCAPE  &kp A  &kp S  &kp D             &lt 3 F  &kp G          &kp H        &kp J  &kp K         &kp L    &kp SEMI  &kp SQT
+&kp ESCAPE  &kp A  &kp S  &kp D             &lt 3 F  &kp G          &kp H        &kp J  &kp K         &kp L    &kp SEMI  &kp NUMBER_4
 &kp LSHFT   &kp Z  &kp X  &kp C             &kp V    &kp B          &kp N        &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp ENTER
                           &kp LEFT_CONTROL  &mo 2    &lt 5 SPACE    &lt 4 ENTER  &mo 1  &kp LEFT_ALT
             >;
@@ -79,10 +81,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp NUMBER_1          &kp N2  &kp N3            &kp N4            &kp N5       &kp N6           &kp N7               &kp N8         &kp N9      &kp N0  &kp BSPC
-&trans     &trans                &kp N5  &kp RA(NUMBER_4)  &kp RA(N5)        &kp GRAVE    &trans           &kp RA(MINUS)        &kp RA(EQUAL)  &kp MINUS   &trans  &trans
-&kp LSHFT  &kp LEFT_PARENTHESIS  &trans  &kp EXCLAMATION   &macro_less_than  &trans       &kp KP_SUBTRACT  &macro_greater_than  &trans         &kp RA(N8)  &trans  &trans
-                                         &kp LGUI          &trans            &kp SPACE    &kp RET          &trans               &kp RALT
+&kp RA(NUMBER_2)  &kp RA(NUMBER_6)      &kp SLASH  &kp RA(N0)        &kp RA(NUMBER_3)  &kp N8        &kp RA(N7)       &kp LS(SQT)          &kp LEFT_BRACKET  &kp NUMBER_1  &kp KP_MULTIPLY  &kp BSPC
+&trans            &trans                &kp N5     &kp RA(NUMBER_4)  &kp RA(N5)        &kp RA(N7)    &trans           &kp RA(MINUS)        &kp RA(EQUAL)     &kp MINUS     &trans           &trans
+&kp LSHFT         &kp LEFT_PARENTHESIS  &trans     &kp EXCLAMATION   &macro_less_than  &trans        &kp KP_MULTIPLY  &macro_greater_than  &trans            &kp RA(N8)    &trans           &trans
+                                                   &kp LGUI          &trans            &kp SPACE     &kp RET          &trans               &kp RALT
             >;
         };
 
@@ -94,18 +96,17 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp NUMBER_1  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR          &kp RPAR           &kp BSPC
+&kp GRAVE  &kp NUMBER_1  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR          &kp RPAR           &kp BSPC
 &trans &kp F1   &kp F2        &kp F3  &kp F4    &kp F5    &kp F6       &kp EQUAL  &kp EQUAL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT
 &trans &kp F7   &kp F8        &kp F9  &kp F10   &kp F11   &kp F12      &kp N8     &kp APOS         &trans            &trans             &kp TILDE
-                               &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
         calc {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DIVIDE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp NUMBER_6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_MINUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DOT     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_COMMA  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DIVIDE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_MINUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DOT     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp M            &trans
                         &trans  &trans  &trans    &trans         &trans           &kp KP_NUMBER_0
             >;
         };
