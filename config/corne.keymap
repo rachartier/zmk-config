@@ -142,8 +142,8 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        game_option {
-            if-layers = <6>;
+        options {
+            if-layers = <6 0>;
             then-layer = <4>;
         };
     };
