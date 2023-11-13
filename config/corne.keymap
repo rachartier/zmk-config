@@ -37,6 +37,7 @@
                 <&kp KP_NUMBER_6 &kp KP_N2>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
+
             label = "MACRO_GREATER_THAN";
         };
         macro_less_than: macro_less_than {
@@ -80,10 +81,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp RA(NUMBER_2)  &kp RA(NUMBER_6)      &kp SLASH  &kp RA(N0)        &kp RA(NUMBER_3)  &kp N8        &kp RA(N7)       &kp LS(SQT)          &kp LEFT_BRACKET  &kp NUMBER_1  &kp KP_MULTIPLY  &kp DELETE
-&trans            &trans                &kp N5     &kp RA(NUMBER_4)  &kp RA(N5)        &kp RA(N7)    &trans           &kp RA(MINUS)        &kp RA(EQUAL)     &kp MINUS     &trans           &trans
-&kp LSHFT         &kp LEFT_PARENTHESIS  &trans     &kp EXCLAMATION   &kp 0xc5          &trans        &kp KP_MULTIPLY  &kp 0xc6             &trans            &kp RA(N8)    &trans           &trans
-                                                   &kp LGUI          &trans            &kp SPACE     &kp RET          &trans               &kp RALT
+&kp RA(NUMBER_2)  &kp RA(NUMBER_6)      &kp SLASH  &kp RA(N0)        &kp RA(NUMBER_3)  &kp N8        &kp RA(N7)       &kp LS(SQT)    &kp LEFT_BRACKET  &kp NUMBER_1  &kp KP_MULTIPLY  &kp DELETE
+&trans            &trans                &kp N5     &kp RA(NUMBER_4)  &kp RA(N5)        &kp RA(N7)    &trans           &kp RA(MINUS)  &kp RA(EQUAL)     &kp MINUS     &trans           &trans
+&kp LSHFT         &kp LEFT_PARENTHESIS  &trans     &kp EXCLAMATION   &kp NUBS          &trans        &kp KP_MULTIPLY  &kp RS(NUBS)   &trans            &kp RA(N8)    &trans           &trans
+                                                   &kp LGUI          &trans            &kp SPACE     &kp RET          &trans         &kp RALT
             >;
         };
 
