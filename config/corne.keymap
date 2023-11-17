@@ -54,6 +54,20 @@
 
             label = "MACRO_LESS_THAN";
         };
+
+        windows_capture_screen: windows_capture_screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp LS(S)>,
+                <&macro_release>,
+                <&kp LGUI>;
+
+            label = "WINDOWS_CAPTURE_SCREEN";
+        };
     };
 
     keymap {
@@ -114,10 +128,10 @@
 
         layer_4 {
             bindings = <
-&none       &bootloader   &none         &none         &none         &none           &none     &bootloader     &none         &none      &none  &none
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
-&none       &tog 6        &none         &none         &none         &none           &none     &none           &none         &none      &none  &none
-                                        &none         &none         &none           &none     &none           &none
+&none       &bootloader   &none         &none         &none         &none           &none                    &bootloader     &none         &none      &none  &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT                 &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
+&none       &tog 6        &none         &none         &none         &none           &windows_capture_screen  &none           &none         &none      &none  &none
+                                        &none         &none         &none           &none                    &none           &none
             >;
         };
 
