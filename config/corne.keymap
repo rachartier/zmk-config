@@ -16,12 +16,12 @@
 #undef MOVE_LEFT
 #undef MOVE_RIGHT
 
-#define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
-#define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
-#define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
-#define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
+#define MOVE_UP MOVE_Y(-U_MOUSE_MOVE_MAX)
+#define MOVE_DOWN MOVE_Y(U_MOUSE_MOVE_MAX)
+#define MOVE_LEFT MOVE_X(-U_MOUSE_MOVE_MAX)
+#define MOVE_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
 
-&mmv {
+&msc {
     time-to-max-speed-ms = <800>;             /* <--- How long time until max speed is reached (default: 500) */
 };
 
@@ -152,8 +152,8 @@
         mouse {
             bindings = <
 &trans  &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &trans  &trans    &trans     &trans            &trans          &trans     &trans  &trans
-&trans  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans    &mkp LCLK  &mwh SCROLL_DOWN  &mwh SCROLL_UP  &mkp RCLK  &trans  &trans
-&trans  &mwh SCROLL_DOWN  &mwh SCROLL_UP  &trans           &trans  &trans    &trans     &trans            &trans          &trans     &trans  &trans
+&trans  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans    &mkp LCLK  &msc SCROLL_DOWN  &msc SCROLL_UP  &mkp RCLK  &trans  &trans
+&trans  &msc SCROLL_DOWN  &msc SCROLL_UP  &trans           &trans  &trans    &trans     &trans            &trans          &trans     &trans  &trans
                                           &trans           &trans  &trans    &trans     &trans            &trans
             >;
         };
