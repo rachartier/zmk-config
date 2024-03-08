@@ -166,15 +166,6 @@
                           &kp LEFT_CONTROL  &mo 2  &kp SPACE    &lt 4 ENTER  &tog 6  &kp LEFT_ALT
             >;
         };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
