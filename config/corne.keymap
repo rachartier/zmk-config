@@ -148,10 +148,10 @@
 
         calc {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DIVIDE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_MINUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DOT     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp M            &trans
-                        &trans  &trans  &trans    &trans         &trans           &kp KP_NUMBER_0
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DIVIDE  &kp LS(N7)        &kp LS(NUMBER_8)  &kp LS(N9)        &kp KP_ASTERISK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_MINUS   &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp PLUS         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DOT     &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp M            &trans
+                        &trans  &trans  &trans    &trans         &trans            &kp LS(NUMBER_0)
             >;
         };
 
