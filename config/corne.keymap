@@ -70,16 +70,16 @@
             label = "WINDOWS_CAPTURE_SCREEN";
         };
 
-        windows_fullscreen: windows_fullscreen {
+        windows_maximize: windows_fullscreen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_GUI &kp LEFT_SHIFT>,
+                <&kp LEFT_GUI>,
                 <&macro_tap>,
-                <&kp ENTER>,
+                <&kp LEFT_SHIFT>,
                 <&macro_release>,
-                <&kp LGUI &kp LEFT_SHIFT>;
+                <&kp LGUI>;
 
             label = "WINDOWS_FULLSCREEN";
         };
@@ -143,10 +143,10 @@
 
         layer_4 {
             bindings = <
-&none           &bootloader   &none         &none         &none         &none           &none                    &bootloader          &none                &none      &none  &none
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT                 &kp DOWN_ARROW       &kp UP_ARROW         &kp RIGHT  &none  &none
-&none           &tog 6        &none         &none         &none         &none           &windows_capture_screen  &windows_fullscreen  &windows_fullscreen  &none      &none  &kp ENTER
-                                            &kp LGUI      &none         &none           &none                    &none                &none
+&none           &bootloader   &none         &none         &none         &none           &none                    &bootloader        &none              &none      &none  &none
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT                 &kp DOWN_ARROW     &kp UP_ARROW       &kp RIGHT  &none  &none
+&none           &tog 6        &none         &none         &none         &none           &windows_capture_screen  &windows_maximize  &windows_maximize  &none      &none  &kp ENTER
+                                            &kp LGUI      &none         &none           &none                    &none              &none
             >;
         };
 
