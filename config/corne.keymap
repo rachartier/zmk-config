@@ -160,7 +160,7 @@
 &none           &bootloader   &none         &none         &none         &none           &none                    &bootloader        &none              &none      &none  &none
 &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT                 &kp DOWN_ARROW     &kp UP_ARROW       &kp RIGHT  &none  &none
 &none           &tog 6        &none         &none         &none         &none           &windows_capture_screen  &windows_minimize  &windows_maximize  &none      &none  &kp ENTER
-                                            &kp LGUI      &none         &none           &none                    &none              &none
+                                            &kp LCTRL     &kp LEFT_GUI  &none           &none                    &none              &none
             >;
         };
 
