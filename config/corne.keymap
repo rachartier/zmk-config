@@ -184,10 +184,10 @@
 
         tmux {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans         &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(LEFT)  &kp LS(RIGHT)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans         &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(J)  &kp LS(K)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans     &trans
             >;
         };
     };
