@@ -113,7 +113,7 @@
         mouse: mouse {
             compatible = "zmk,behavior-hold-tap";
             label = "MOUSE";
-            bindings = <&lt>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -133,9 +133,18 @@
 
             bindings = <
 &kp TAB     &kp Q  &kp W    &kp E                    &kp R    &kp T             &kp Y               &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp ESCAPE  &kp A  &lt 7 S  &homerow_alt LEFT_ALT D  &lt 3 F  &kp G             &kp H               &kp J  &kp K      &kp L    &kp SEMI  &kp NUMBER_4
+&kp ESCAPE  &kp A  &lt 1 S  &homerow_alt LEFT_ALT D  &lt 4 F  &kp G             &kp H               &kp J  &kp K      &kp L    &kp SEMI  &kp NUMBER_4
 &kp LSHFT   &kp Z  &kp X    &kp C                    &kp V    &kp B             &kp N               &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
-                            &kp LEFT_CONTROL         &mo 2    &mouse 5 SPACE    &mt LEFT_ALT ENTER  &mo 1  &mo 4
+                            &kp LEFT_CONTROL         &mo 3    &mouse 6 SPACE    &mt LEFT_ALT ENTER  &mo 2  &mo 5
+            >;
+        };
+
+        tmux {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans            &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &kp LS(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans            &trans         &trans  &trans
+                        &trans  &trans  &trans    &trans        &trans        &trans
             >;
         };
 
@@ -181,7 +190,7 @@
             bindings = <
 &none           &bootloader   &none         &none         &none         &none           &none                    &bootloader        &none              &none      &none  &kp DELETE
 &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT                 &kp DOWN_ARROW     &kp UP_ARROW       &kp RIGHT  &none  &none
-&trans          &tog 6        &none         &none         &none         &none           &windows_capture_screen  &windows_minimize  &windows_maximize  &none      &none  &kp ENTER
+&trans          &tog 7        &none         &none         &none         &none           &windows_capture_screen  &windows_minimize  &windows_maximize  &none      &none  &kp ENTER
                                             &kp LCTRL     &kp LEFT_GUI  &none           &none                    &none              &none
             >;
         };
@@ -200,16 +209,7 @@
 &kp TAB     &kp Q  &kp W  &kp E             &kp R  &kp T                 &kp Y        &kp U   &kp I         &kp O    &kp P     &kp BSPC
 &kp ESCAPE  &kp A  &kp S  &kp D             &kp F  &kp G                 &kp H        &kp J   &kp K         &kp L    &kp SEMI  &kp NUMBER_4
 &kp LCTRL   &kp Z  &kp X  &kp C             &kp V  &kp B                 &kp N        &kp M   &kp COMMA     &kp DOT  &kp FSLH  &kp ENTER
-                          &kp LEFT_CONTROL  &mo 2  &mt LEFT_ALT SPACE    &lt 4 ENTER  &tog 6  &kp LEFT_ALT
-            >;
-        };
-
-        tmux {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans            &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &kp LS(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans            &trans         &trans  &trans
-                        &trans  &trans  &trans    &trans        &trans        &trans
+                          &kp LEFT_CONTROL  &mo 3  &mt LEFT_ALT SPACE    &lt 5 ENTER  &tog 7  &kp LEFT_ALT
             >;
         };
     };
