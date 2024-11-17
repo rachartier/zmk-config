@@ -99,6 +99,18 @@
         };
     };
 
+    behaviors {
+        homerow_alt: homerow_alt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_ALT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -110,10 +122,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q  &kp W    &kp E             &kp R    &kp T          &kp Y               &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp ESCAPE  &kp A  &lt 7 S  &mt LEFT_ALT D    &lt 3 F  &kp G          &kp H               &kp J  &kp K      &kp L    &kp SEMI  &kp NUMBER_4
-&kp LSHFT   &kp Z  &kp X    &kp C             &kp V    &kp B          &kp N               &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
-                            &kp LEFT_CONTROL  &mo 2    &lt 5 SPACE    &mt LEFT_ALT ENTER  &mo 1  &mo 4
+&kp TAB     &kp Q  &kp W    &kp E                    &kp R    &kp T          &kp Y               &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp ESCAPE  &kp A  &lt 7 S  &homerow_alt LEFT_ALT D  &lt 3 F  &kp G          &kp H               &kp J  &kp K      &kp L    &kp SEMI  &kp NUMBER_4
+&kp LSHFT   &kp Z  &kp X    &kp C                    &kp V    &kp B          &kp N               &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
+                            &kp LEFT_CONTROL         &mo 2    &lt 5 SPACE    &mt LEFT_ALT ENTER  &mo 1  &mo 4
             >;
         };
 
