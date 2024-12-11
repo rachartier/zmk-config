@@ -222,7 +222,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans        &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &kp UP_ARROW  &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &tog 8  &trans
             >;
         };
     };
