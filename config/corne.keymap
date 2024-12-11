@@ -194,7 +194,7 @@
             bindings = <
 &none           &bootloader   &none         &none         &none         &none           &none                    &bootloader        &none              &none      &none  &kp DELETE
 &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT                 &kp DOWN_ARROW     &kp UP_ARROW       &kp RIGHT  &none  &none
-&trans          &tog 7        &none         &none         &none         &none           &windows_capture_screen  &windows_minimize  &windows_maximize  &none      &none  &kp ENTER
+&trans          &tog 7        &tog 8        &none         &none         &none           &windows_capture_screen  &windows_minimize  &windows_maximize  &none      &none  &kp ENTER
                                             &kp LCTRL     &kp LEFT_GUI  &none           &none                    &none              &none
             >;
         };
@@ -214,6 +214,15 @@
 &kp ESCAPE      &kp A  &kp S  &kp D             &kp F  &kp G        &kp H        &kp J   &kp K         &kp L    &kp SEMI  &kp NUMBER_4
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N        &kp M   &kp COMMA     &kp DOT  &kp FSLH  &kp ENTER
                               &kp LEFT_CONTROL  &mo 3  &kp SPACE    &lt 5 ENTER  &tog 7  &kp LEFT_ALT
+            >;
+        };
+
+        jupiterhell {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans        &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &kp UP_ARROW  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
